@@ -1,7 +1,5 @@
 package test2;
 
-import test1.Hero;
-
 import java.util.Scanner;
 
 public class HelloWorld {

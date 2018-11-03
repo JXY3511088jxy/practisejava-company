@@ -1,4 +1,4 @@
-package test1;
+package 多线程;
 
 public class Hero {
     public String name;

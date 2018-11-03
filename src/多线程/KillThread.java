@@ -1,12 +1,10 @@
-package test1;
+package 多线程;
 
-public class Battle implements Runnable {
-
+public class KillThread extends Thread {
     private Hero h1;
-
     private Hero h2;
 
-    public Battle(Hero h1, Hero h2){
+    public KillThread(Hero h1,Hero h2){
         this.h1 = h1;
         this.h2 = h2;
     }
