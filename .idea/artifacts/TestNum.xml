@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TestNum">
+    <output-path>D:/</output-path>
+    <root id="archive" name="TestNum.jar">
+      <element id="directory" name="Apachejmeter">
+        <element id="file-copy" path="$PROJECT_DIR$/out/production/practice/Apachejmeter/TestNum.class" />
+      </element>
+    </root>
+  </artifact>
+</component>
