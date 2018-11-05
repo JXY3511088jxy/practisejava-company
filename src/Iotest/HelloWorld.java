@@ -1,4 +1,4 @@
-package test2;
+package Iotest;
 
 import java.util.Scanner;
 
@@ -9,7 +9,6 @@ public class HelloWorld {
         int a = s.nextInt();
         System.out.print("第二个整数是：");
         int b = s.nextInt();
-
 
     }
 }
