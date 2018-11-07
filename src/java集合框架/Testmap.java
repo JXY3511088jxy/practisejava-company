@@ -1,4 +1,7 @@
 package java集合框架;
+/**
+ * 遍历map
+ */
 
 import java.util.HashMap;
 import java.util.Iterator;
