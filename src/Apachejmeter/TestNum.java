@@ -1,9 +1,5 @@
 package Apachejmeter;
 
-/**
- *这是一个jmeter测试java代码，需要导入jmeter对应的jar包
- */
-
 import org.apache.jmeter.config.Arguments;      //这个位置注意，可有可能自动导入的是jdk的同名类，导致脚本报错
 import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;
 import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;
