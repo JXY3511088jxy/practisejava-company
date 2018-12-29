@@ -8,10 +8,10 @@ public class LifePotion extends Item{
 
     public static void main(String[] args) {
         Item i = new Item();
-        i.effect();;
+        i.effect();
 
         LifePotion lp = new LifePotion();
-        lp.effect();;
+        lp.effect();
     }
 
 }

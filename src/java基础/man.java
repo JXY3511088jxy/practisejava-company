@@ -4,4 +4,7 @@ public class man extends human {
     public void hunt(){
         System.out.println("java基础.man is hunting!");
     }
+    public int getint(int x){
+        return x;
+    }
 }

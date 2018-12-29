@@ -12,7 +12,7 @@ public class openbrowser {
         public void openBrowser() {
             //System.setProperty("webdriver.chrome.driver", "D:\\IdeaProjects\\practice\\lib\\chromedriver.exe");
             //WebDriver driver = new ChromeDriver();
-            driver.get("http://222.222.222.201:8089/isp/");
+            driver.get("http://222.222.222.31:8084/isp/");     //打开网页
             driver.manage().window().maximize();//对窗口进行最大化
         }
 
