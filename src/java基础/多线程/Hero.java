@@ -42,7 +42,7 @@ public class Hero {
     }
 
     public boolean isDead() {
-        return 0>=hp?true:false;
+        return hp<=0?true:false;
     }
 
     public void useItem(Item i){        //对应到多态中增加的方法
