@@ -15,5 +15,8 @@ public class Test {
 
         Test t = new Test();
         t.sing();
+        Child c = new Child();
+        int a = c.age();
+        System.out.println(a);
     }
 }
