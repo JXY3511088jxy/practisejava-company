@@ -9,6 +9,13 @@ public class Hero {
     float armor;//护甲
     public int MoveSpeed;//移动速度
     int damage;//伤害
+    static String copyright;
+    private String otherName;//外号，用于反射中调用私有方法。
+
+    static {//静态方法块，会在类加载的时候执行，new对象的时候先于构造方法前执行。
+        System.out.println("初始化 copyright");
+        copyright = "版权由Riot Games公司所有";
+    }
 
     public Hero(){//无参构造方法
         System.out.println("hero的无参构造方法");
@@ -25,6 +32,15 @@ public class Hero {
         this.MoveSpeed = MoveSpeed;
         this.damage = damage;
     }
+
+    public String getOtherName() {
+        return otherName;
+    }
+
+    public void setOtherName(String otherName) {
+        this.otherName = otherName;
+    }
+
     void keng(){
         System.out.println("这个一个坑货");
     }//未加权限修饰符的方法默认为包权限
