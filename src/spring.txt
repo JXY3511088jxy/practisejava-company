@@ -1,0 +1,2 @@
+class=java基础.反射.E有什么用.Service1
+method=doService1
