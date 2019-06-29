@@ -26,12 +26,14 @@ public class Test2 {
     public static void main(String[] args)  {//运行报错的原因是文件中的包路径包含了中文。
 
         //从spring.txt中获取类名称和方法
-        File springConfigFile = new File("D:\\IdeaProjects\\practice\\src\\spring.txt");
+        File springConfigFile = new File("D:\\IdeaProjects\\practice\\lib\\123.txt");
         Properties springConfig = new Properties();
         try {
             springConfig.load(new FileInputStream(springConfigFile));
-            String className = (String)springConfig.get("class");
+            String className = (String)springConfig.get("class");//这种方式读取的文件中是不能有中文的，不然读不出来。
+            System.out.println(className);
             String methodName = (String)springConfig.get("method");
+
 
             //根据类名称获取类对象
             Class clazz = Class.forName(className);

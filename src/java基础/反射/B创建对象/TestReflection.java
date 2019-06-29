@@ -12,6 +12,7 @@ import java.lang.reflect.Constructor;
 public class TestReflection {
     //传统的使用new的方式创建对象
     public static void main(String[] args) {
+
         Hero h1 = new Hero();
         h1.name="teemo";
         System.out.println(h1);
