@@ -1,9 +1,17 @@
 package java基础.抽象类;
 
+/**
+ * 抽象类可以不包含抽象方法
+ * 包含抽象方法的类一定是抽象类
+ */
 public abstract class Employee {
+
     private String name;
+
     private String address;
+
     private int number;
+
     public Employee(String name,String address,int number){
         System.out.println("Constructing an Employee");
         this.name = name;
