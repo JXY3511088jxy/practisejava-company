@@ -22,6 +22,7 @@ import java.util.Properties;
  */
 public class Test2 {
 
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String[] args)  {//运行报错的原因是文件中的包路径包含了中文。
 
         //从spring.txt中获取类名称和方法
