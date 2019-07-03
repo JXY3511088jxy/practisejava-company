@@ -14,8 +14,19 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-    <bean name="c" class="java框架.spring.Category">
+<!--    <context:annotation-config/>
+    <bean name="c" class="java框架.spring.pojo.Category">
         <property name="name" value="这是我在xml文件中写的名字" />
     </bean>
+
+    <bean name="p" class="java框架.spring.pojo.Product">
+        <property name="name" value="给name赋值"/>
+
+    </bean>-->
+    <context:component-scan base-package="java框架.spring.pojo"/>
+    <context:component-scan base-package="java框架.spring.aspect"/>
+    <context:component-scan base-package="java框架.spring.service"/>
+    <aop:aspectj-autoproxy/>
+
 
 </beans>

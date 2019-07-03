@@ -1,10 +1,13 @@
-package java框架.spring;
+package java框架.spring.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component("c")  //为Category 类加上@Component注解，即表明此类是bean
 public class Category {
 
     private int id;
 
-    private String name;
+    private String name="Category的名字";
 
     public int getId() {
         return id;
@@ -21,4 +24,5 @@ public class Category {
     public void setName(String name) {
         this.name = name;
     }
+
 }

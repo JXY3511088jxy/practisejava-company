@@ -1,4 +1,4 @@
-package java框架.spring;
+package java框架.spring.test;
 /**
  * 以获取对象的方式来进行比较
  *
@@ -14,6 +14,8 @@ package java框架.spring;
  *
  */
 
+import java框架.spring.pojo.Product;
+import java框架.spring.service.ProductService;
 import org.springframework.context.ApplicationContext;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -26,8 +28,14 @@ public class TestSpring {
                 new String[]{"applicationContext.xml"}
         );
 
-        Category c = (Category)context.getBean("c");
+        Product p = (Product)context.getBean("p");
 
-        System.out.println(c.getName());
+        //Category c = (Category)context.getBean("c");
+
+        System.out.println(p.getName());
+        System.out.println(p.getCategory().getName());
+
+        ProductService s =(ProductService)context.getBean("s");
+        s.doSomeService();
     }
 }
