@@ -37,5 +37,6 @@ public class TestSpring {
 
         ProductService s =(ProductService)context.getBean("s");
         s.doSomeService();
+        s.doSomeThing("这个是doSomeThing方法");
     }
 }

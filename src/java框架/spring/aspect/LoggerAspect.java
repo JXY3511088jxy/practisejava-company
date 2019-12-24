@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class LoggerAspect {
 
     @Around(value = "execution(* java框架.spring.service.ProductService.*(..))")
-    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object log1(ProceedingJoinPoint joinPoint) throws Throwable {
         System.out.println("start log:" + joinPoint.getSignature().getName());
         Object object = joinPoint.proceed();
         System.out.println("end log:" + joinPoint.getSignature().getName());
