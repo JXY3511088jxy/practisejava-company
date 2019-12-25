@@ -11,8 +11,16 @@ public class AbstractDemo {
 //        System.out.println(s.getName());
         System.out.println("Call mailCheck using Salary reference --");
         s.mailCheck();
+        s.abs();
+        s.test();
+        s.son();
+     //   s.siyou1();
 
         System.out.println("\nCall mailCheck using Employee reference--");
         e.mailCheck();
+        ((Salary) e).son();
+     //  ((Salary) e).siyou1();
+
+
     }
 }
